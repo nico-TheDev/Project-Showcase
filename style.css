@@ -1,0 +1,151 @@
+
+/* GENERAL RESET */
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 400;
+    background-color: #121212;
+    color: white;
+
+}
+
+
+
+/* Header */
+
+.header{
+    padding: 2rem 0;
+    box-shadow: 0 5px 1rem rgba(255,255,255,0.2);
+}
+
+.navbar{
+    width: 90%;
+    margin:auto;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 3rem;
+}
+
+.navbar__logo{
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.navbar__link{
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    margin:0 1rem;
+}
+
+.navbar__link:hover,
+.footer__link:hover,
+.social__link:hover{
+    color: green;
+}
+
+/* MAIN */
+
+main{
+    padding: 3rem 0;
+}
+
+.main__title{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap: 6rem;
+    justify-items: center;
+}
+
+.four-card{
+    order: 1;
+}
+
+.single-price{
+    order: 2;
+}
+
+.huddle-single{
+    order: 3;
+}
+
+.fylo-landing{
+    order: 4;
+}
+
+.huddle-alternate{
+    order: 5;
+}
+
+.fylo-dark{
+    order: 6;
+}
+
+.clipboard{
+    order: 7;
+}
+
+.huddle-curved{
+    order: 8;
+}
+
+.ping{
+    order: 9;
+}
+
+
+.footer-holder{
+    border-top: 1px solid gray;
+    padding: 3rem 0;
+}
+
+.footer{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.footer__link{
+    color: white;
+    text-decoration: underline;
+}
+
+.social__link{
+    display: inline-block;
+    color: white;
+    margin-top: 1rem;
+}
+
+.daymode{
+    filter:invert(1);
+    background-color: white;
+}
+
+
