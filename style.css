@@ -37,15 +37,23 @@ body{
     width: 90%;
     margin:auto;
     height: 10vh;
+    display: -webkit-box;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
 
     font-size: 3rem;
 }
 
 .navbar__logo{
     font-family: 'Shadows Into Light', cursive;
+}
+
+.special{
+    -webkit-animation: jitter 1s ease-in;
+            animation: jitter 1s ease-in;
 }
 
 .navbar__link{
@@ -81,39 +89,48 @@ main{
 }
 
 .four-card{
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+            order: 1;
 }
 
 .single-price{
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+            order: 2;
 }
 
 .huddle-single{
-    order: 3;
+    -webkit-box-ordinal-group: 4;
+            order: 3;
 }
 
 .fylo-landing{
-    order: 4;
+    -webkit-box-ordinal-group: 5;
+            order: 4;
 }
 
 .huddle-alternate{
-    order: 5;
+    -webkit-box-ordinal-group: 6;
+            order: 5;
 }
 
 .fylo-dark{
-    order: 6;
+    -webkit-box-ordinal-group: 7;
+            order: 6;
 }
 
 .clipboard{
-    order: 7;
+    -webkit-box-ordinal-group: 8;
+            order: 7;
 }
 
 .huddle-curved{
-    order: 8;
+    -webkit-box-ordinal-group: 9;
+            order: 8;
 }
 
 .ping{
-    order: 9;
+    -webkit-box-ordinal-group: 10;
+            order: 9;
 }
 
 
@@ -125,9 +142,12 @@ main{
 .footer{
     width: 90%;
     margin: auto;
+    display: -webkit-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     font-size: 2rem;
     text-align: center;
 }
@@ -143,9 +163,63 @@ main{
     margin-top: 1rem;
 }
 
+/* DAYMODE EFFECT */
+
 .daymode{
-    filter:invert(1);
     background-color: white;
+    color: black;
+}
+
+.daymode .header{
+    box-shadow: 0 5px 1rem rgba(0,0,0,0.2);
+}
+
+.daymode .card{
+    box-shadow: 0px 1rem 2rem rgba(0,0,0,0.5);
+}
+
+.daymode .card:hover{
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+    box-shadow: 5px 1.5rem 3rem rgba(0,0,0,0.5);
+}
+
+.daymode .card__title{
+    color: black;
+}
+
+.daymode .card__title::after{
+    background-color: black;
+}
+
+.daymode .link{
+    color: black;
+}
+
+.daymode .btn{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    color: black;
+ 
+}
+
+.daymode .btn:hover{
+    color:white;
+    background-color: black;
+}
+
+.daymode .navbar__link{
+    color: black;
+}
+
+.daymode .footer__link,
+.daymode .social__link{
+    color: black;
 }
 
 
+.navbar__link:hover,
+.footer__link:hover,
+.social__link:hover{
+    color: green;
+}
