@@ -223,3 +223,11 @@ main{
 .social__link:hover{
     color: green;
 }
+
+
+
+@media(max-width:430px){
+    .navbar{
+        font-size: 2rem;
+    }
+}
