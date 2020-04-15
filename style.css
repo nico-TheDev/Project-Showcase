@@ -133,6 +133,13 @@ main{
             order: 9;
 }
 
+.dashboard{
+    order: 10;
+}
+
+.apparel{
+    order: 11;
+}
 
 .footer-holder{
     border-top: 1px solid gray;
