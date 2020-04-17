@@ -141,6 +141,10 @@ main{
     order: 11;
 }
 
+.pricing{
+    order: 12;
+}
+
 .footer-holder{
     border-top: 1px solid gray;
     padding: 3rem 0;
