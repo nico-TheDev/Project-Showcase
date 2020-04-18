@@ -145,6 +145,10 @@ main{
     order: 12;
 }
 
+.signup{
+    order: 13;
+}
+
 .footer-holder{
     border-top: 1px solid gray;
     padding: 3rem 0;
