@@ -149,6 +149,10 @@ main{
     order: 13;
 }
 
+.project{
+    order: 14;
+}
+
 .footer-holder{
     border-top: 1px solid gray;
     padding: 3rem 0;
