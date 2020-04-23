@@ -153,6 +153,10 @@ main{
     order: 14;
 }
 
+.insure{
+    order:15;
+}
+
 .footer-holder{
     border-top: 1px solid gray;
     padding: 3rem 0;
