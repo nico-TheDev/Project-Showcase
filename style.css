@@ -157,6 +157,9 @@ main{
     order:15;
 }
 
+.easybank{
+    order: 16;
+}
 .footer-holder{
     border-top: 1px solid gray;
     padding: 3rem 0;
